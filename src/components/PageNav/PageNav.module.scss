@@ -1,0 +1,14 @@
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.active {
+  color: var(--color-primary) !important;
+}
