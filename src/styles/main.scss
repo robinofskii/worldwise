@@ -46,3 +46,7 @@ body {
 .color-info {
   color: var(--color-info);
 }
+
+.active {
+  color: var(--color-primary) !important;
+}

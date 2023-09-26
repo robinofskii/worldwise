@@ -3,27 +3,17 @@ import { NavLink } from 'react-router-dom';
 import styles from './PageNav.module.scss';
 
 const PageNav = () => {
-  const checkActive = ({ isActive }: { isActive: boolean }) => {
-    return isActive ? styles.active : '';
-  };
-
   return (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <NavLink to="/" className={checkActive}>
-            Home
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/pricing" className={checkActive}>
-            Pricing
-          </NavLink>
+          <NavLink to="/pricing">Pricing</NavLink>
         </li>
         <li>
-          <NavLink to="/product" className={checkActive}>
-            Product
-          </NavLink>
+          <NavLink to="/product">Product</NavLink>
         </li>
       </ul>
     </nav>
